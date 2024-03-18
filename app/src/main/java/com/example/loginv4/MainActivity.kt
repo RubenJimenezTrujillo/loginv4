@@ -1,5 +1,4 @@
 package com.example.loginv4
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -10,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-
+/*Hola este es un comentario de prueba*/
 fun main (){
-    print( " hola")
+    print( "hola")
 }
