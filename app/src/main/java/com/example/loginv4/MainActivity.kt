@@ -1,7 +1,7 @@
 package com.example.loginv4
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.Firebase
+//import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics
 
 class MainActivity : AppCompatActivity() {
@@ -13,7 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val analytics = FirebaseAnalytics
+        val analytics = FirebaseAnalytics.getInstance(this)
+        val bundle = Bundle()
+        bundle.putString("message","Integracion de firebase completa")
+        analytics.logEvent("InitScreen",bundle)
+
     }
 
 }
@@ -21,8 +25,8 @@ class MainActivity : AppCompatActivity() {
 /*Hola este es un comentario de prueba*/
 
 
-fun main (){
-    print( "hola")
+//fun main (){
+   // print( "hola")
 
 
     // Write a message to the database
@@ -30,4 +34,3 @@ fun main (){
    // val myRef = database.getReference("message")
 
    // myRef.setValue("Hello, World!")
-}
