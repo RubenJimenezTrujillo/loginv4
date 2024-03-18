@@ -1,6 +1,7 @@
 package com.example.loginv4
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 //import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics
 
@@ -17,6 +18,17 @@ class MainActivity : AppCompatActivity() {
         val bundle = Bundle()
         bundle.putString("message","Integracion de firebase completa")
         analytics.logEvent("InitScreen",bundle)
+
+
+        //setup
+        setup()
+    }
+    private fun setup() {
+        title= "Autenticacion"
+
+       // ButtonAdd.setOnClickListener{
+
+        }
 
     }
 
