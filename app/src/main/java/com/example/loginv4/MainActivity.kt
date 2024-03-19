@@ -3,9 +3,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 //import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAuth:FirebaseAuth
@@ -20,16 +23,28 @@ class MainActivity : AppCompatActivity() {
         val btnadd : Button = findViewById(R.id.ButtonAdd)
         val emailtxt : TextView =findViewById(R.id.emailText)
         val passtxt : TextView = findViewById(R.id.passwortText)
-
+        firebaseAuth = Firebase.auth
         btningresar.setOnClickListener(){
-
+            singIn(emailtxt.text.toString(),passtxt.text.toString())
         }
 
     }
-    private fun setup() {
-        title= "Autenticacion"
+    private fun singIn(email:String , password:String) {
 
-       // ButtonAdd.setOnClickListener{
+        firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this) {
+
+            task ->
+
+            if (task.isSuccessful){
+                val user = firebaseAuth.currentUser
+                Toast.makeText(baseContext,user?.uid.toString(),Toast.LENGTH_SHORT).show()
+
+            }else {
+                Toast.makeText(baseContext,"Error de email y/o contrasena",Toast.LENGTH_SHORT).show()
+            }
+
+        }
+
 
         }
 
