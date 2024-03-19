@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "795287725749",
+    "project_id": "bdtaxi-27043",
+    "storage_bucket": "bdtaxi-27043.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795287725749:android:c27149517c351733ae00fc",
+        "android_client_info": {
+          "package_name": "com.Tec.taxiApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyCMQs5j0gMnHlUcgu1BQDUEx_SK7dw8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795287725749:android:72c71ba9601597d7ae00fc",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyCMQs5j0gMnHlUcgu1BQDUEx_SK7dw8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795287725749:android:cc0b8b58db33b321ae00fc",
+        "android_client_info": {
+          "package_name": "com.example.loginv4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyCMQs5j0gMnHlUcgu1BQDUEx_SK7dw8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795287725749:android:885766ab274b4966ae00fc",
+        "android_client_info": {
+          "package_name": "com.example.mapataxitomtom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyCMQs5j0gMnHlUcgu1BQDUEx_SK7dw8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
