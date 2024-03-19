@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inicia Sesión"
+        tools:layout_editor_absoluteX="-91dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/logoapptaxi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Iniciar Sesión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
+
+    <EditText
+        android:id="@+id/TextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_icon" />
+
+    <EditText
+        android:id="@+id/TextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/TextEmailAddress"
+        tools:layout_editor_absoluteX="91dp" />
+
+    <ImageButton
+        android:id="@+id/google_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/google_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="571dp" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="156dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:text="Registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <ImageButton
+        android:id="@+id/face_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/facebook_icon"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="571dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

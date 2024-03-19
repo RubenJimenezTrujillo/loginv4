@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.loginv4.ui.home.HomeFragment"
+        android:label="title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_drive"
+        android:name="com.example.loginv4.ui.drive.DriveFragment"
+        android:label="title_drive"
+        tools:layout="@layout/fragment_drive" />
+
+    <fragment
+        android:id="@+id/navigation_list"
+        android:name="com.example.loginv4.ui.list.ListFragment"
+        android:label="title_list"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/navigation_acount"
+        android:name="com.example.loginv4.ui.acount.AcountFragment"
+        android:label="acount"
+        tools:layout="@layout/fragment_acount" />
+</navigation>
