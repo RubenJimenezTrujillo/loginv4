@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--B%&W-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <!--Azul-->
+    <color name="blue00">#023047</color>
+    <color name="blue01">#00296b</color>
+    <color name="blue02">#003f88</color>
+    <color name="blue03">#00509d</color>
+    <color name="blue04">#219ebc</color>
+    <color name="blue05">#8ecae6</color>
+
+    <!--Amarillo-->
+    <color name="yellow00">#fb8500</color>
+    <color name="yellow01">#ffb703</color>
+    <color name="yellow02">#F5C639</color>
+
+
 </resources>
